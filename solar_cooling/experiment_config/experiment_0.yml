@@ -1,0 +1,30 @@
+# Configuration for Oman_model
+# Date: Thu 26th of November 2018
+# Author: Franziska
+
+exp_name: Referenz
+exp_number: 0
+number_of_variations: 1
+
+run_model_thermal: False
+run_postprocessing_thermal: True
+
+run_model_electric: False
+run_postprocessing_electric: True
+
+debug: False
+solver: 'cbc'
+solver_verbose: True
+number_timesteps: 8760
+
+# Parameters for the energy system
+parameters_system: 'parameters_experiment_0.csv'
+parameters_variation:
+  - 'parameters_variation_base.csv'
+
+# Preprocessed data
+time_series_file_name: 'time_series.csv'
+
+# plot data
+start_of_plot: 4000
+end_of_plot: 4100
