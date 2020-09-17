@@ -1,1 +1,1 @@
-# solar_examples
+# solar_models
