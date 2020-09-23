@@ -307,17 +307,12 @@ def electric_postprocessing(config_path, var_number):
         (('storage_el', 'electricity'), 'flow'): '#9acd32',
         (('electricity', 'storage_el'), 'flow'): '#9acd32',
         (('electricity', 'cooling_tower'), 'flow'): '#ff0000',
-#        (('electricity', 'aquifer'), 'flow'): '#555555',
         (('storage_cool', 'None'), 'capacity'): '#555555',
         (('storage_cool', 'cool'), 'flow'): '#9acd32',
         (('absorpion_chiller', 'waste'), 'flow'): '#4682b4',
         (('waste', 'cool_tower'), 'flow'): '#42c77a'}
 
     # define order of inputs and outputs
-    inordercool = [(('absorption_chiller', 'cool'), 'flow'),
-                   (('storage_cool', 'cool'), 'flow')]
-    outordercool = [(('cool', 'demand'), 'flow'),
-                    (('cool', 'storage_cool'), 'flow')]
     inorderel = [(('pv', 'electricity'), 'flow'),
                  (('storage_electricity', 'electricity'), 'flow'),
                  (('grid_el', 'electricity'), 'flow')]
@@ -325,9 +320,6 @@ def electric_postprocessing(config_path, var_number):
                   (('electricity', 'cooling_tower'), 'flow'),
                   (('electricity', 'storage_electricity'), 'flow'),
                   (('electricity', 'excess_el'), 'flow')]
-    # inorderstor = [(('cool', 'storage_cool'), 'flow')]
-    # outorderstor = [(('storage_cool', 'cool'), 'flow'),
-    #                 (('storage_cool', 'None'), 'capacity')]
 
     fig = plt.figure(figsize=(15, 15))
 
