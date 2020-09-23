@@ -231,7 +231,8 @@ def electric_postprocessing(config_path, var_number):
     # write scalars into csv for this experiment and variation
     scalars_all.to_csv(
         csv_path + 'electric_model_{0}_{1}_scalars.csv'.format(
-            cfg['exp_number'], var_number))
+            cfg['exp_number'], var_number),
+        header=False)
 
     # write scalars for all variations of the experiment into csv
     df_all_var = pd.concat([df_all_var, scalars_all], axis=1, sort=True)
@@ -251,7 +252,8 @@ def electric_postprocessing(config_path, var_number):
                             left_index=True, right_index=True)
     sequences_df.to_csv(
         csv_path + 'electric_model_{0}_{1}_sequences.csv'.format(
-            cfg['exp_number'], var_number))
+            cfg['exp_number'], var_number),
+        header=False)
 
     ########################
     # Plotting the results # # to adapt for the use case
