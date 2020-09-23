@@ -25,7 +25,7 @@ def main(yaml_file):
     config_file_path = (
         os.path.abspath('../experiment_config/' + exp_cfg_file_name))
     with open(config_file_path, 'r') as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.CLoader)
 
 #    global df_all_var
 

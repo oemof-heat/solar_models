@@ -14,7 +14,7 @@ run_postprocessing_electric: True
 
 debug: False
 solver: 'cbc'
-solver_verbose: True
+solver_verbose: False
 number_timesteps: 8760
 
 # Parameters for the energy system
