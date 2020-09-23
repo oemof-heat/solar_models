@@ -426,14 +426,14 @@ def thermal_postprocessing(config_path, var_number):
     ax_el.set_title("electricity")
 
     plt.savefig(
-        plot_path + 'thermal_model_{0}_{1}.png'.format(
+        plot_path + 'thermal_model_results_plot_{0}_{1}.png'.format(
             cfg['exp_number'], var_number))
     csv_plot = pd.merge(thermal_seq_resample, cool_seq_resample,
                         left_index=True, right_index=True)
     csv_plot = pd.merge(csv_plot, el_seq_resample,
                         left_index=True, right_index=True)
     csv_plot.to_csv(
-        plot_path + 'thermal_model_plot_{0}_{1}.csv'.format(
+        plot_path + 'thermal_model_results_plot_data_{0}_{1}.csv'.format(
             cfg['exp_number'], var_number))
 
     return df_all_var
