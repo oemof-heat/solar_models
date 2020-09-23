@@ -399,7 +399,7 @@ def thermal_postprocessing(config_path, var_number):
 
     ax_thermal.set_ylabel('Power in kW')
     ax_thermal.set_xlabel('time')
-    ax_thermal.set_title("thermal")
+    ax_thermal.set_title("thermal flows")
 
     # plot cooling energy
     my_plot_cool = oev.plot.io_plot(
@@ -411,7 +411,7 @@ def thermal_postprocessing(config_path, var_number):
 
     ax_cool.set_ylabel('Power in kW')
     ax_cool.set_xlabel('time')
-    ax_cool.set_title("cool")
+    ax_cool.set_title("cool flows")
 
     # plot electrical energy
     my_plot_el = oev.plot.io_plot(
@@ -423,7 +423,7 @@ def thermal_postprocessing(config_path, var_number):
 
     ax_el.set_ylabel('Power in kW')
     ax_el.set_xlabel('time')
-    ax_el.set_title("electricity")
+    ax_el.set_title("electricity flows")
 
     plt.savefig(
         plot_path + 'thermal_model_results_plot_{0}_{1}.png'.format(
