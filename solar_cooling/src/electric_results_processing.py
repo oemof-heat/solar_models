@@ -241,7 +241,7 @@ def electric_postprocessing(config_path, var_number):
             csv_path
             + 'electric_model_{0}_scalars_all_variations.csv'.format(
                 cfg['exp_number']))
-        logging.info('Writing DF_all_variations into csv')
+        logging.info('Writing the results for all variations into csv')
 
     # ## sequences ## #
     sequences_df = pd.merge(ambient_seq, waste_seq, left_index=True,
