@@ -6,10 +6,10 @@ exp_name: Referenz
 exp_number: 0
 number_of_variations: 1
 
-run_model_thermal: False
+run_model_thermal: True
 run_postprocessing_thermal: True
 
-run_model_electric: False
+run_model_electric: True
 run_postprocessing_electric: True
 
 debug: False
