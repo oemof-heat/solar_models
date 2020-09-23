@@ -332,7 +332,7 @@ def electric_postprocessing(config_path, var_number):
 
     ax_el.set_ylabel('Power in kW')
     ax_el.set_xlabel('time')
-    ax_el.set_title("electricity")
+    ax_el.set_title("results of the electric model - electricity flows")
 
     plt.savefig(
         plot_path + 'electric_model_{0}_{1}.png'.format(
