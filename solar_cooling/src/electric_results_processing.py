@@ -35,7 +35,7 @@ def electric_postprocessing(config_path, var_number):
     global df_all_var
 
     with open(config_path, 'r') as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.CLoader)
 
     # define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))

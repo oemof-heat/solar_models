@@ -78,7 +78,7 @@ def ep_costs_func(capex, n, opex, wacc):
 def run_model_thermal(config_path, var_number):
 
     with open(config_path, 'r') as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.CLoader)
 
     solver = cfg['solver']
     debug = cfg['debug']
