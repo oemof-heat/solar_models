@@ -298,18 +298,19 @@ def electric_postprocessing(config_path, var_number):
         return axes
 
     cdict = {
-        (('absorption_chiller', 'cool'), 'flow'): '#4682b4',
         (('storage_cool', 'cool'), 'flow'): '#555555',
         (('cool', 'storage_cool'), 'flow'): '#9acd32',
         (('cool', 'demand'), 'flow'): '#cd0000',
-        (('el_grid', 'electricity'), 'flow'): '#999999',
+        (('grid_el', 'electricity'), 'flow'): '#999999',
         (('pv', 'electricity'), 'flow'): '#ffde32',
-        (('storage_el', 'electricity'), 'flow'): '#9acd32',
-        (('electricity', 'storage_el'), 'flow'): '#9acd32',
+        (('storage_electricity', 'electricity'), 'flow'): '#9acd32',
+        (('electricity', 'storage_electricity'), 'flow'): '#9acd32',
+        (('electricity', 'compression_chiller'), 'flow'): '#4682b4',
         (('electricity', 'cooling_tower'), 'flow'): '#ff0000',
         (('storage_cool', 'None'), 'capacity'): '#555555',
         (('storage_cool', 'cool'), 'flow'): '#9acd32',
-        (('absorpion_chiller', 'waste'), 'flow'): '#4682b4',
+        (('compression_chiller', 'waste'), 'flow'): '#4682b4',
+        (('electricity', 'excess_el'), 'flow'): '#999999',
         (('waste', 'cool_tower'), 'flow'): '#42c77a'}
 
     # define order of inputs and outputs
