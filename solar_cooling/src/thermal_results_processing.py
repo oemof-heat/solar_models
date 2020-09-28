@@ -361,7 +361,6 @@ def thermal_postprocessing(config_path, var_number):
         (('storage_el', 'electricity'), 'flow'): '#9acd32',
         (('electricity', 'storage_el'), 'flow'): '#9acd32',
         (('electricity', 'cooling_tower'), 'flow'): '#ff0000',
-        (('electricity', 'aquifer'), 'flow'): '#555555',
         (('storage_cool', 'None'), 'capacity'): '#555555',
         (('storage_cool', 'cool'), 'flow'): '#9acd32',
         (('absorpion_chiller', 'waste'), 'flow'): '#4682b4',
@@ -383,9 +382,6 @@ def thermal_postprocessing(config_path, var_number):
                  (('grid_el', 'electricity'), 'flow')]
     outorderel = [(('electricity', 'cooling_tower'), 'flow'),
                   (('electricity', 'storage_electricity'), 'flow')]
-    # inorderstor = [(('cool', 'storage_cool'), 'flow')]
-    # outorderstor = [(('storage_cool', 'cool'), 'flow'),
-    #                 (('storage_cool', 'None'), 'capacity')]
 
     fig = plt.figure(figsize=(15, 15))
 
