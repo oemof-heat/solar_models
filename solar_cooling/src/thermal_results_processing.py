@@ -380,8 +380,10 @@ def thermal_postprocessing(config_path, var_number):
     inorderel = [(('pv', 'electricity'), 'flow'),
                  (('storage_electricity', 'electricity'), 'flow'),
                  (('grid_el', 'electricity'), 'flow')]
-    outorderel = [(('electricity', 'cooling_tower'), 'flow'),
-                  (('electricity', 'storage_electricity'), 'flow')]
+    outorderel = [(('electricity', 'absorption_chiller'), 'flow'),
+                  (('electricity', 'cooling_tower'), 'flow'),
+                  (('electricity', 'storage_electricity'), 'flow'),
+                  (('electricity', 'excess_el'), 'flow')]
 
     fig = plt.figure(figsize=(15, 15))
 
