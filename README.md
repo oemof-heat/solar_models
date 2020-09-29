@@ -14,6 +14,11 @@ You will find the structure of the components in the docstring of the files
 modeled as transformers with fix efficiencies.
 
 ### desalination
+The application models a desalination system with a given water demand.
+Two different systems are included, a thermal system, with uses a med (multi
+effect distillation) to provide the water and an electrival system with a ro
+(reverse osmosis). You will find the structure of the components in the
+docstring of the files 'desalination_med_model.py' and 'desalination_ro_model.py'.
 
 ## How to download and run a model?
 In the following steps we describe how you get from here to running the script,
