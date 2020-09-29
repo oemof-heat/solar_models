@@ -3,11 +3,13 @@
 """
 Date: 27,05,2020
 Author: Franziska Pleissner
-This oemof application models a cooling system for Oman. An earlier version calculated
-the results of the 'Provision of cooling in Oman - a linear optimisation problem
-with special consideration of different storage options' of the IRES 2019.
-This version is adapted for oemof v0.4 and uses the solar_thermal_collector from
-the oemof thermal repository.
+This oemof application models a cooling system for a campus building in Oman.
+An earlier version calculated the results of the
+'Provision of cooling in Oman - a linear optimisation problem
+with special consideration of different storage options' of the IRES 2019
+(https://www.atlantis-press.com/proceedings/ires-19/125923330).
+This version is adapted for oemof v0.4 and uses the solar_thermal_collector
+from the oemof thermal repository.
 """
 
 from thermal_model import run_model_thermal
