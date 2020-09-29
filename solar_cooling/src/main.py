@@ -3,10 +3,10 @@
 """
 Date: 27,05,2020
 Author: Franziska Pleissner
-This App will model a cooling system for Oman. An earlier Version calculated
-the results of 'Provision of cooling in Oman - a linear optimisation problem
-with special consideration of different storage options' IRES 2019
-This version is adapted for oemof 0.4 and uses the solar_thermal_collector from
+This oemof application models a cooling system for Oman. An earlier version calculated
+the results of the 'Provision of cooling in Oman - a linear optimisation problem
+with special consideration of different storage options' of the IRES 2019.
+This version is adapted for oemof v0.4 and uses the solar_thermal_collector from
 the oemof thermal repository.
 """
 

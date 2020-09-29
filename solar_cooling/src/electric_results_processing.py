@@ -4,7 +4,7 @@ Created on Dez 06 2018
 
 @author: Franziska Pleissner
 
-System C: concrete example: Plot ocooling process with a solar collector
+System C: concrete example: Plot of cooling process with a solar collector
 """
 
 ############
@@ -22,7 +22,7 @@ import yaml
 import pandas as pd
 from electric_model import ep_costs_func
 
-# import oemof plots
+# Import oemof plots
 try:
     import matplotlib.pyplot as plt
 except ImportError:
@@ -37,7 +37,7 @@ def electric_postprocessing(config_path, var_number):
     with open(config_path, 'r') as ymlfile:
         cfg = yaml.load(ymlfile, Loader=yaml.CLoader)
 
-    # define the used directories
+    # Define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
     results_path = abs_path + '/results'
     csv_path = results_path + '/optimisation_results/'
@@ -84,13 +84,13 @@ def electric_postprocessing(config_path, var_number):
     ambient_res = views.node(energysystem.results['main'], 'ambient')
     none_res = views.node(energysystem.results['main'], 'None')
 
-    # sequences:
+    # Sequences:
     cool_seq = cool_bus['sequences']
     waste_seq = waste_bus['sequences']
     el_seq = el_bus['sequences']
     ambient_seq = ambient_res['sequences']
 
-    # scalars
+    # Scalars
     cool_scal = cool_bus['scalars']
     waste_scal = waste_bus['scalars']
     el_scal = el_bus['scalars']
@@ -128,7 +128,7 @@ def electric_postprocessing(config_path, var_number):
 
     costs_total = energysystem.results['meta']['objective']
 
-    # storage costs must be subtract for reference scenario or added
+    # Storage costs must be subtract for reference scenario or added
     # for the other scenarios.
 
     # reference scenario:

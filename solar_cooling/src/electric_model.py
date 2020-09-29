@@ -54,7 +54,7 @@ import yaml
 import pandas as pd
 import pyomo.environ as po
 
-# import oemof plots
+# Import oemof plots
 try:
     import matplotlib.pyplot as plt
 except ImportError:
@@ -82,7 +82,7 @@ def run_model_electric(config_path, var_number):
 
     # ## Read data and parameters ## #
 
-    # define the used directories
+    # Define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
     results_path = abs_path + '/results'
     data_ts_path = abs_path + '/data/data_confidential/'
@@ -210,7 +210,7 @@ def run_model_electric(config_path, var_number):
 
     energysystem.add(chil, towe)
 
-    # storages
+    # Storages
 
     if param_value['nominal_capacitiy_stor_cool'] == 0:
         stor_co = solph.components.GenericStorage(
