@@ -58,7 +58,4 @@ id,var_name,value,unit,reference,Comment,tag_1,tag_2,component
 57,desalination_ro_lifetime,0,a,,,,costs,desalination
 58,desalination_ro_opex,0,EUR/(a x EUR_invest),,,,costs,desalination
 59,selling_price_electricity,0,EUR/Wh,,,,costs,system
-60,price_gas,0,EUR/kWh,,,,costs,system
-61,CO2_price_el,0,EUR/kWh,,,,costs,system
-62,CO2_price_gas,0,EUR/kWh,,,,costs,system
-63,min_desalination,0,1,,,,,desalination
+60,min_desalination,0,1,,,,,desalination
