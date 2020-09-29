@@ -159,7 +159,8 @@ def run_model_med(config_path, var_number):
 
     collector_precalc_data.to_csv(
         results_path + '/precalcs/precalc' + '_{0}_{1}_{2}.csv'.format(
-            cfg['exp_number'], var_number, currentdate))
+            cfg['exp_number'], var_number, currentdate),
+        header=False)
 
     # define costs function
     def ep_costs_f(capex, n, opex):

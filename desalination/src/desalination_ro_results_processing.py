@@ -180,14 +180,16 @@ def postprocessing_ro(config_path, var_number):
     # write scalars into csv
     scalars_all.to_csv(
         csv_path + 'desalination_ro_{0}_{1}_{2}_scalars.csv'.format(
-                        cfg['exp_number'], var_number, currentdate))
+                        cfg['exp_number'], var_number, currentdate),
+        header=False)
 
     # ## sequences ## #
     sequences_df = pd.concat([df_seq_el, df_seq_wat], axis=1)
 
     sequences_df.to_csv(
         csv_path + 'desalination_ro_{0}_{1}_{2}_sequences.csv'.format(
-            cfg['exp_number'], var_number, currentdate))
+            cfg['exp_number'], var_number, currentdate),
+        header=False)
 
     ####################
     # Plotting results #
