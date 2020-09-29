@@ -1,0 +1,34 @@
+# Configuration for desalination_model
+# Date: Thu 26th of June 2020
+# Author: Franziska Pleissner
+
+exp_name: invest-optimierung, Referenz
+exp_number: 0
+number_of_variations: 1
+
+run_precalculation: False
+
+run_model_med: True
+run_postprocessing_med: True
+
+run_model_ro: True
+run_postprocessing_ro: True
+
+csp_method_normal: True
+csp_method_horizontal: False
+
+debug: False
+solver: 'cbc'
+solver_verbose: False
+number_timesteps: 8760
+frequenz: H
+
+# Parameters for the energy system
+parameters_system:
+  - 'parameters_experiment_desalination_base.csv'
+
+# Preprocessed data
+time_series_file_name: 'time_series.csv'
+
+# plot data
+
