@@ -1,0 +1,12 @@
+id,var_name,value,unit,reference,Comment,tag_1,tag_2,component
+1,price_electr_variation,1,1,,,,,
+2,price_gas_variation,1,1,,,,,
+3,CO2_price_el_variation,1,1,,,,,
+4,CO2_price_gas_variation,1,1,,,,,
+5,capex_stor_el_variation,1,1,,,,,
+6,sol_fraction_thermal_variation,1,1,,,,,
+7,sol_fraction_el_variation,1,1,,,,,
+8,capex_stor_th_variation,1,1,,,,,
+9,capex_stor_cool_variation,1,1,,,,,
+10,name_scenario,base,,,,,,
+11,scenario_number,0_0,,,,,,
