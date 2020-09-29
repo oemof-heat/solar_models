@@ -273,7 +273,7 @@ def postprocessing_ro(config_path, var_number):
     figure = plt.gcf()
     figure.set_size_inches(28, 15)
     plt.savefig(
-        plot_path + 'ro_electricity_winter_{0}_{1}_{2}.png'.format(
+        plot_path + 'ro_electricity_summer_{0}_{1}_{2}.png'.format(
             cfg['exp_number'], var_number, currentdate),
         dpi=150,
         bbox_inches='tight')
@@ -288,7 +288,7 @@ def postprocessing_ro(config_path, var_number):
     plt.yticks(size=25)
     figure = plt.gcf()
     figure.set_size_inches(30, 15)
-    plt.savefig(plot_path + 'ro_electricity_summer_{0}_{1}_{2}.png'.format(
+    plt.savefig(plot_path + 'ro_electricity_winter_{0}_{1}_{2}.png'.format(
                     cfg['exp_number'], var_number, currentdate),
                 dpi=150,
                 bbox_inches='tight')
