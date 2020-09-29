@@ -65,7 +65,7 @@ def run_model_med(config_path, var_number):
     currentdate = datetime.today().strftime('%Y%m%d')
 
     with open(config_path, 'r') as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
     solver = cfg['solver']
     debug = cfg['debug']
