@@ -1,14 +1,14 @@
 # Desalination model
 
 ## Structur of the input data
-There are two typs of input data: time series for the demand and the solar input
+There are two types of input data: time series for the demand and the solar input
 data and parameters to describe the components. Through historical reasons the
 time series has to be provided in a folder called 'data_confidential' and the
 parameters in a file called 'data_public'.
 
 ### Time series
 The default name of the file is 'time_series.csv'. You can change the name, if you
-change it also in the confoguration file. Time series to provide are:
+change it also in the configuration file. Time series to provide are:
 * demand_water_in_qm
 * Ambient_temperature_in_degC
 * dni_in_W
@@ -19,7 +19,7 @@ change it also in the confoguration file. Time series to provide are:
 ### Parameters
 The parameters given in file 'parameters_experiment_desalination_base.csv' are
 necessary. You can rename the file, but you have to change it in the configuration
-file too.
+file, too.
 
 ## Structur of the configuration file
 There is one configuration file called 'experiment_0'. You can add more and
@@ -43,5 +43,4 @@ documentation of oemof-thermal for the difference.
 You can provide 'parameters_system' as a list. For every item in the list,
 there is calculated a new optimisation. The name of the results will be
 <some_name>_experiment_number_variation_number.
-
 

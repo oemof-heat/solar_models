@@ -3,9 +3,9 @@
 """
 Date: 23.06.2020
 Author: Franziska Pleissner
-This App will model the energy supply of a seawater desalination process. A
+This oemof-thermal application will model the energy supply of a seawater desalination process. A
 concentrating solar power plant is used to provide heat and electricity to the
-desalination facility. The latter is not considered in detail, but is#
+desalination facility. The latter is not considered in detail, but is
 represented as a transfomer with a fixed efficiency.
 """
 
