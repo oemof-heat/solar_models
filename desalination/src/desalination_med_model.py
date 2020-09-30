@@ -331,7 +331,7 @@ def run_model_med(config_path, var_number):
     model.solve(solver=solver, solve_kwargs={'tee': solver_verbose})
 
     if debug:
-        filename = (results_path + '/lp_files/' + '/' +
+        filename = (results_path + '/lp_files/' +
                     'desalination_med_{0}_{1}_{2}.lp'.format(
                         cfg['exp_number'], var_number, currentdate))
         logging.info('Store lp-file in {0}.'.format(filename))
