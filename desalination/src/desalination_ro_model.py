@@ -114,7 +114,7 @@ def run_model_ro(config_path, var_number):
     pv = solph.Source(
         label='pv_source',
         outputs={bele: solph.Flow(
-            fix=data['global_horinzontal_in_W_m2'],
+            fix=data['global_horizontal_relative'],
             investment=solph.Investment(
                 ep_costs=ep_costs_f(
                     param_value['pv_invest_costs_output_el'],
