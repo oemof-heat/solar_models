@@ -28,15 +28,12 @@ execute them all at once by adding them to the 'main.py' file.
 
 The file is a yaml-file, which specifies your experiment. 
 It holds:
-* experiments name and number
+* experiments name and number,
 * the number of variation: it has to correspond with the length of
-'parameters_variation' list or the length of 'parameters_system' list.
-.
-
-* For run arguments, which decide, which file is executed and which not
-* Four parameters, which describe, how to do the optimisastion.
-
-* The file names for the input data.
+'parameters_variation' list or the length of 'parameters_system' list,
+* four run arguments, which decide which file is executed and which not,
+* four parameters, which describe how to do the optimisastion,
+* the file names for the input data.
 
 You can provide 'parameters_system' or 'parameters_variation' as a list. The
 other one must be no list. For every item in the list, there is calculated a
