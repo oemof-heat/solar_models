@@ -8,7 +8,7 @@ parameters in a file called 'data_public'.
 
 ### Time series
 The default name of the file is 'time_series.csv'. You can change the name, if you
-change it also in the confoguration file. Time series to provide are:
+change it also in the configuration file. Time series to provide are:
 * Cooling load kW
 * global_irradiance_kW_per_m2_TMY
 * diffus_irradiance_kW_per_m2_TMY
