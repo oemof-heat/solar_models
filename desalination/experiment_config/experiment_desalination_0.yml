@@ -28,7 +28,7 @@ parameters_system:
   - 'parameters_experiment_desalination_base.csv'
 
 # Preprocessed data
-time_series_file_name: 'andasol.csv'
+time_series_file_name: 'dummy-data.csv'
 
 # plot data
 
