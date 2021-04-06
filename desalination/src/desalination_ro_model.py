@@ -65,7 +65,7 @@ def run_model_ro(config_path, var_number):
     # Define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
     results_path = abs_path + '/results'
-    data_ts_path = abs_path + '/data/data_confidential/'
+    data_ts_path = abs_path + '/data/data_timeseries/'
     data_param_path = abs_path + '/data/data_public/'
 
     # Read parameter values from parameter file
@@ -114,7 +114,7 @@ def run_model_ro(config_path, var_number):
     pv = solph.Source(
         label='pv_source',
         outputs={bele: solph.Flow(
-            fix=data['global_horizontal_relative'],
+            fix=data['PV_el_W_m2'],
             investment=solph.Investment(
                 ep_costs=ep_costs_f(
                     param_value['pv_invest_costs_output_el'],
