@@ -81,7 +81,7 @@ def run_model_med(config_path, var_number):
     # Define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
     results_path = abs_path + '/results'
-    data_ts_path = abs_path + '/data/data_confidential/'
+    data_ts_path = abs_path + '/data/data_timeseries/'
     data_param_path = abs_path + '/data/data_public/'
 
     # Read parameter values from parameter file

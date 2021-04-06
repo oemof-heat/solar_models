@@ -26,7 +26,8 @@ def run_precalculation(config_path, var_number):
     currentdate = datetime.today().strftime('%Y%m%d')
 
     with open(config_path, 'r') as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
+#        cfg = yaml.load(ymlfile)
 
     solver = cfg['solver']
     debug = cfg['debug']
@@ -42,7 +43,7 @@ def run_precalculation(config_path, var_number):
     # Define the used directories
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
     results_path = abs_path + '/results'
-    data_ts_path = abs_path + '/data/data_confidential/'
+    data_ts_path = abs_path + '/data/data_timeseries/'
     data_param_path = abs_path + '/data/data_public/'
 
     # Read parameter values from parameter file
