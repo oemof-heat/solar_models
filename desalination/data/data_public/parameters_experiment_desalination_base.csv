@@ -1,0 +1,64 @@
+id,var_name,value,unit,reference,Comment,tag_1,tag_2,component
+1,wacc,0.08,,,,,,
+2,collector_invest_costs_output_th,150.0,EUR/m2,,,,costs,collector
+3,collector_lifetime,25,a,,,,costs,collector
+4,collector_opex,0.02,1,,,,costs,collector
+5,latitude,37.228528,,,,,,collector
+6,longitude,-3.068536,,,,,,collector
+7,collector_tilt,1,,,,,,collector
+8,collector_azimuth,180,,,,,,collector
+9,cleanliness,0.9,,,,,,collector
+10,eta_0,0.78,,,,,,collector
+11,c_1,64,W/m2K,,,,,collector
+12,c_2,0,kW/m2K2,,,,,collector
+13,temp_collector_inlet,265,celsius,,,,,collector
+14,temp_collector_outlet,302,celsius,,,,,collector
+15,a_1,-0.0008651,1/grad,,,,,collector
+16,a_2,0.0008871,1/grad,,,,,collector
+17,a_3,-0.00005425,1/grad,,,,,collector
+18,a_4,0.000001665,1/grad,,,,,collector
+19,a_5,-2.31E-08,1/grad,,,,,collector
+20,a_6,1.20E-10,1/grad,,,,,collector
+21,collector_elec_consumption,0.01,,,,,conversion_factor,collector
+22,collector_thermal_losses,0.2,,,,,conversion_factor,collector
+23,pv_invest_costs_output_el_09708,0.970873786,EUR/0.97087W,,,,costs,pv
+24,pv_invest_costs_output_el,100.0,EUR/m2,,,,costs,pv
+25,pv_lifetime,25,a,,,,costs,pv
+26,pv_opex,0.015,EUR/(a x EUR_invest),,,,costs,pv
+27,pv_size,0.970873786,,,,,costs,pv
+28,thermal_stor_losses,0,,,,,capacity_losses,storage_thermal
+29,thermal_stor_conv_factor_in,1,,,,,conversion_factor,storage_thermal
+30,thermal_stor_conv_factor_out,1,,,,,conversion_factor,storage_thermal
+31,thermal_stor_invest_costs_capacity,0.02,EUR/Wh,,,,costs,storage_thermal
+32,thermal_stor_lifetime,25,a,,,,costs,storage_thermal
+33,thermal_stor_opex,0.01,1,,,,costs,storage_thermal
+34,electric_stor_losses,0,,,,,capacity_losses,storage_electricity
+35,electric_stor_conv_factor_in,0.85,,,,,conversion_factor,storage_electricity
+36,electric_stor_conv_factor_out,1,,,,,conversion_factor,storage_electricity
+37,electric_stor_invest_costs_capacity,0.4,EUR/Wh,,,,costs,storage_electricity
+38,electric_stor_lifetime,20,a,,,,costs,storage_electricity
+39,electric_stor_opex,0.01,1,,,,costs,storage_electricity
+40,water_stor_losses,0,,,,,capacity_losses,storage_water
+41,water_stor_invest_costs,65,EUR/m3_water,,,,costs,storage_water
+42,water_stor_lifetime,30,a,,,,costs,storage_water
+43,water_stor_opex,0.02,EUR/(a x EUR_invest),,,,costs,storage_water
+44,powerplant_conv_factor_electrical,0.285,,,,,conversion_factor,powerplant
+45,powerplant_conv_factor_thermal_out,0.715,,,,,conversion_factor,powerplant
+46,powerplant_invest_costs,1,EUR/W_electrical_output,,,,costs,powerplant
+47,powerplant_lifetime,15,a,,,,costs,powerplant
+48,powerplant_opex,0.03,EUR/(a x EUR_invest),,,,costs,powerplant
+49,desalination_med_conv_factor_electric,1500,Wh_el/m3_water,,,,conversion_factor,desalination
+50,desalination_med_conv_factor_thermal,80000,Wh_el/m3_water,,,,conversion_factor,desalination
+51,desalination_med_invest_costs,39600,EUR/(m3_water x h),,,,costs,desalination
+52,desalination_med_lifetime,25,a,,,,costs,desalination
+53,desalination_med_opex,0.02,,,,,costs,desalination
+54,desalination_ro_conv_factor_electric,4500,Wh_el/m3_water,,,,conversion_factor,desalination
+55,desalination_ro_conv_factor_thermal,0,Wh_el/m3_water,,,,conversion_factor,desalination
+56,desalination_ro_invest_costs,26400,EUR/(m3_water x h),,,,costs,desalination
+57,desalination_ro_lifetime,20,a,,,,costs,desalination
+58,desalination_ro_opex,0.03,EUR/(a x EUR_invest),,,,costs,desalination
+59,selling_price_electricity,-0.00001,EUR/Wh,,,,costs,
+60,price_gas,0.04,EUR/kWh,,,,costs,
+61,CO2_price_el,0.012096,EUR/kWh,,,,costs,
+62,CO2_price_gas,0.006048,EUR/kWh,,,,costs,
+63,min_desalination,0.5,1,,,,,
